@@ -1,0 +1,36 @@
+
+<div class="container">
+  <div class="container-fluid mt-4">
+  
+  <ion-row>
+    <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="6" size-xl="3" class="px-3 d-flex align-items-stretch"  *ngFor = "let results of products">
+
+       
+        <div class="row">
+        <div class="col">
+
+
+    <div class="cards_wrap">
+      <div class="card_item">
+        <div class="card_inner"> 
+          <div class="col">
+          <img  [src]="results.icon" width="100%">
+        
+              </div>
+        
+          <!-- <img src='http://127.0.0.1:8000/static/51yIybqYFTL._UL1100_.jpg'> -->
+        
+     
+    </div>
+  </div> 
+  </div>
+    
+  <span class="photoDesc" ><h6>{{results.title}}</h6></span>
+  <span class="photoDesc"><h2>  ${{results.desc}}</h2></span>
+  </div>
+  </div>
+  
+    </ion-col>
+    </ion-row>
+   
+</div>

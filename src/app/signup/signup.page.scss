@@ -1,0 +1,41 @@
+/* set entire body that is webpage */
+/* set form background colour*/
+body{
+    background-color: lightblue;
+}
+
+form{
+	background: #fff;
+}
+/* set padding and size of th form */
+.container-fluid{
+    background-color: #f1d7d7;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.form-container{
+	border-radius: 10px;
+	padding: 30px;
+
+}
+.container{
+    padding-top: 20px;
+}
+.btn-block{
+    color: #f1d7d7;
+    background-color: #480048;
+    border-radius: 5px;
+    box-shadow: white;
+    overflow: hidden;
+    height: 4vh;
+    width:57vh;
+    
+
+  }
+  .text-center{
+      color: #480048;
+  }
+
+#InputPassword1{
+      color: #480048;
+  }

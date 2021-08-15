@@ -1,0 +1,110 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 1</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <app-explore-container></app-explore-container>
+
+  <div class="Container">
+
+<section class="carousel" aria-label="Gallery">
+  <ol class="carousel__viewport">
+    <li id="carousel__slide1"
+        class="carousel__slide">
+        <img src="assets/posters/1.jpg" height="800px"  alt="">
+        
+      <div class="carousel__snapper">
+        <a href="#carousel__slide4"
+           class="carousel__prev">Go to last slide</a>
+        <a href="#carousel__slide2"
+           class="carousel__next">Go to next slide</a>
+      </div>
+    </li>
+    <li id="carousel__slide2"
+        class="carousel__slide">
+        <img src="assets/posters/5501230.jpg"  height="800px" alt="">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide1"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide3"
+         class="carousel__next">Go to next slide</a>
+    </li>
+    <li id="carousel__slide3"
+        class="carousel__slide">
+        <img src="assets/posters/guy2bg.jpg" alt="">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide2"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide4"
+         class="carousel__next">Go to next slide</a>
+    </li>
+    <li id="carousel__slide4"
+        class="carousel__slide">
+        <img src="assets/posters/y.jpg" alt="">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide3"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide1"
+         class="carousel__next">Go to first slide</a>
+    </li>
+  </ol>
+  <aside class="carousel__navigation">
+    <ol class="carousel__navigation-list">
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide1"
+           class="carousel__navigation-button">Go to slide 1</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide2"
+           class="carousel__navigation-button">Go to slide 2</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide3"
+           class="carousel__navigation-button">Go to slide 3</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide4"
+           class="carousel__navigation-button">Go to slide 4</a>
+      </li>
+    </ol>
+  </aside>
+</section>
+    <div class="text-center">
+      <h2 class = "text">BEST SELLER OF THE SEASON</h2>
+       <P>Loerum Ipsum sentence loerum Ipsum sentence loerum sentence</P>
+       <p>Ipsum sentence loerum sentence</p>
+    </div>
+    <app-card></app-card>
+    <div class="field">
+      <button class="btn">VIEW ALL</button>
+    </div>
+
+    <div class="wrapper width - 960">
+      <div class="box">
+      <div class="box-text">
+               <h1>Loreum ipsum Loreum ipsum<br>
+                       dorem issac
+               </h1>
+      
+      </div>
+      </div>
+      </div>
+
+      <app-cards></app-cards>
+      <br>
+
+      <app-review></app-review>
+
+     
+    </div>
+
+    <ion-footer>
+      <app-footer></app-footer>
+
+    </ion-footer>
+
+    
+
+
+</ion-content>

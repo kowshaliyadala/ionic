@@ -1,0 +1,48 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 1</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <app-explore-container name="Tab 1 page"></app-explore-container>
+ 
+
+
+
+  <div class="container1 pt-0 bg-gray">
+    <div class="row">
+      <div class="col-md-12 px-3">
+      </div>
+    </div>
+  </div>
+  <section class="container-fluid">
+    <!-- row and justify-content-center class is used to place the form in center -->
+    <section class="row justify-content-center ">
+      <section class="col-12 col-sm-6 col-md-4">
+        <form class="form-container"  >
+        <div class="form-group">
+          <h2 class="text-center font-weight-bold "> LOGIN WITH SHOPPER'S STOP</h2><br>
+          
+          <input [(ngModel)]="email" name="email" type="email" class="form-control" id="InputEmail1" aria-describeby="emailHelp" placeholder="Enter email" [(ngModel)] = "email">
+        </div>
+        <div class="form-group">
+         
+          <input [(ngModel)]="password" autocomplete="off" name="password" class="form-control" id="InputPassword1" aria-describeby="passwordHelp" placeholder="Password">
+        </div>
+        <button (click) = "login()" class="btn btn-primary btn-block">LOGIN</button>
+        <div class="form-footer"><br>
+          <p class="text-center">Don't have an account? <ion-router-link  href="/signup">Sign Up</ion-router-link></p>
+          
+        </div>
+        </form>
+      </section>
+    </section>
+  </section>
+  <!-- Login form creation ends -->
+  <ion-footer>
+    <app-footer></app-footer>
+  </ion-footer>
+
+  
+</ion-content>
