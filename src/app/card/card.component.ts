@@ -71,8 +71,8 @@ export class CardComponent implements OnInit {
   obj: any;
   i1:any;
   i2:any;
+  message: any;
   i3:any;
-
 
   
 

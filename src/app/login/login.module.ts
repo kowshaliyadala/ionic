@@ -9,7 +9,6 @@ import { LoginPageRoutingModule } from './login-routing.module';
 import { LoginPage } from './login.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 import { FooterModule } from '../footer/footer.module';
-import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   imports: [
@@ -19,7 +18,6 @@ import { HttpClientModule} from '@angular/common/http';
     LoginPageRoutingModule,
     ExploreContainerComponentModule,
     FooterModule,
-    HttpClientModule,
     
   ],
   declarations: [LoginPage]

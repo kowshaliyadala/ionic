@@ -19,10 +19,11 @@ export class LoginPage {
       this.users = res.users;
     })
   }
-
  login(){
     this.http.post('http://127.0.0.1:8000/auth/login', {email: this.email, password: this.password}) .subscribe((res:any) => {
       console.log(res);
+      localStorage.setItem('email', this.email);
+      console.log(this.email);
       localStorage.setItem('token', res.token);
       localStorage.setItem('myVar', 'abc');
       this.router.navigate(['/cart']);

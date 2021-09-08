@@ -7,7 +7,6 @@ import { IonicModule } from '@ionic/angular';
 import { ProductdetailsPageRoutingModule } from './productdetails-routing.module';
 
 import { ProductdetailsPage } from './productdetails.page';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 import { FooterModule } from '../footer/footer.module';
 
@@ -17,7 +16,6 @@ import { FooterModule } from '../footer/footer.module';
     FormsModule,
     IonicModule,
     ProductdetailsPageRoutingModule,
-    HttpClientModule,
     ExploreContainerComponentModule,
     FooterModule
   ],

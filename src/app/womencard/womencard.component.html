@@ -1,0 +1,49 @@
+<div class="container">
+ 
+  <ion-row>
+
+    
+    <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="6" size-xl="3" class="px-3 d-flex align-items-stretch"  *ngFor = "let women of idealfor">
+        
+      
+     
+       <div [routerLink] = "['/productdetails']" [queryParams]="{name: women.name, type: women.detailPageUrl ,oid: women._id.$oid, material: women.Material, op : women.op, img: women.image, desc : women.desc, price: women.price, i1: women.i1, i2: women.i2, i3: women.i3}"  class="clickable shadow bg-white mb-5 p-0 d-flex flex-column">
+      <div class="row">
+        <div class="col">
+        
+
+ 
+    <div class="cards_wrap">
+      <div class="card_item">
+        <div class="card_inner"> 
+          <div class="col">
+          <img src="{{ women.image }}" style="width: 100%">
+        
+              </div>
+        
+  
+        
+     
+    </div>
+  </div> 
+  </div>
+
+     
+ 
+  <span class="photoDesc" ><h1>
+    <p class="brand">{{  women.brand }}</p>
+    </h1>
+  <p class="name">
+    {{ women.name }}
+  </p></span>
+  <span class="photoDesc"><h2> <del> ${{ women.op }} </del> ${{ women.price }} </h2></span>
+  </div>
+  </div>
+      
+     </div>
+     
+
+    </ion-col>
+    </ion-row>
+   
+</div>

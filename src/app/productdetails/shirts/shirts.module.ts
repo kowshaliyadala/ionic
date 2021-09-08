@@ -10,7 +10,6 @@ import { ShirtsPage } from './shirts.page';
 import { ExploreContainerComponentModule } from 'src/app/explore-container/explore-container.module';
 import { FooterModule } from 'src/app/footer/footer.module';
 import { CardModule } from 'src/app/card/card.module';
-import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
@@ -21,7 +20,6 @@ import { HttpClientModule } from '@angular/common/http';
     ExploreContainerComponentModule,
     FooterModule,
     CardModule,
-    HttpClientModule
   ],
   declarations: [ShirtsPage]
 })

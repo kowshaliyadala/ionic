@@ -27,12 +27,12 @@ export class ProductdetailsPage implements OnInit {
   i2: any;
   i3: any;
   message: any;
+  users = [];
+  email:any;
+  status: any;
    constructor(private http: HttpClient, private activatedroute : ActivatedRoute) {
      
-    this.http.get('http://127.0.0.1:8000/products/p').subscribe((res:any)=>{
-      this.op = res.op; 
-      console.log(this.op);
-   })
+    
     this.activatedroute.queryParams.subscribe(params =>{
           console.log(params);
           this.name = params.name;
@@ -45,21 +45,27 @@ export class ProductdetailsPage implements OnInit {
           this.price = params.price;
           this.i1 = params.i1;
           this.i2 = params.i2;
+          this.message = params.message;
           this.i3 = params.i3;
       })
     }
+   
 
       addCart(){
-        
-        this.http.post('http://127.0.0.1:8000/products/cart', {queryimg:this.queryimg, queryname:this.queryname, querydetail:this.querydetail, price:this.queryop}) .subscribe((res:any) => {
+        this.http.post('http://127.0.0.1:8000/auth/cartd', {queryimg:this.queryimg, queryname:this.queryname, querydetail:this.querydetail, price:this.queryop}) .subscribe((res:any) => {
           this.products = res.products;
-          this.message = res.data;
+          this.status = res.status;
+          console.log(this.message);
           console.log(this.products);
-       /*  this.http.get('http://127.0.0.1:8000/products/cart').subscribe((mes:any)=>{
+          document.getElementById("but").innerHTML = "Item added to cart successfully";
+          
+          
+        })
+        /* this.http.get('http://127.0.0.1:8000/auth/cartd').subscribe((mes:any)=>{
           this.message = mes.data;
     }); */
-        })
       }
+     
   ngOnInit() {
     
   }

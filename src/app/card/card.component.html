@@ -126,21 +126,20 @@
       <p>{{ product.name }}</p>
     
     </ion-col> -->
-    <p>{{ products.name }}</p>
     <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="6" size-xl="3" class="px-3 d-flex align-items-stretch"  *ngFor = "let product of products">
-        
+
       <!-- <div (click) = "onClick(product._id.$oid)" class="clickable shadow bg-white mb-5 p-0 d-flex flex-column"> -->
      
-       <div [routerLink] = "['/productdetails/']" [queryParams]="{name: product.name, type: product.detailPageUrl ,oid: product._id.$oid, material: product.Material, op : product.op, img: product.image, desc : product.desc, price: product.price, i1: product.i1, i2: product.i2, i3: product.i3}"  class="clickable shadow bg-white mb-5 p-0 d-flex flex-column">
+       <div [routerLink] = "['/productdetails/']" [queryParams]="{name: product.name, type: product.detailPageUrl ,oid: product._id.$oid, material: product.Material, op : product.op, img: product.image, desc : product.desc, price: product.price, i1: product.i1, i2: product.i2, message: product.message, i3: product.i3}"  class="clickable shadow bg-white mb-5 p-0 d-flex flex-column">
       <div class="row">
         <div class="col">
-        
 
  
     <div class="cards_wrap">
       <div class="card_item">
         <div class="card_inner"> 
           <div class="col">
+
           <img src="{{ product.image }}" style="width: 100%">
         
               </div>
